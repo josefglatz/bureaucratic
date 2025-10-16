@@ -34,51 +34,51 @@ services:
     # argument: group ''
     # option: dry-run
 
-  JosefGlatz\Bureaucratic\Commands\BackendUsers\NotifyNotLoggedInUsersCommand:
-    tags:
-      - name: 'console.command'
-        command: 'bureaucratic:backend:notify-not-loggedin-users'
-        description: 'Notify backend users which are not loggedin for x days.'
-        schedulable: true
+#  JosefGlatz\Bureaucratic\Commands\BackendUsers\NotifyNotLoggedInUsersCommand:
+#    tags:
+#      - name: 'console.command'
+#        command: 'bureaucratic:backend:notify-not-loggedin-users'
+#        description: 'Notify backend users which are not loggedin for x days.'
+#        schedulable: true
 
-  JosefGlatz\Bureaucratic\Commands\BackendUsers\NotifyAdminsAboutUsersNotLoggedInSinceCommand:
-    tags:
-      - name: 'console.command'
-        command: 'bureaucratic:backend:notify-admin-about-not-loggedin-users'
-        description: 'Notify admin(s) about backend users which are not loggedin for x days.'
-        schedulable: true
+#  JosefGlatz\Bureaucratic\Commands\BackendUsers\NotifyAdminsAboutUsersNotLoggedInSinceCommand:
+#    tags:
+#      - name: 'console.command'
+#        command: 'bureaucratic:backend:notify-admin-about-not-loggedin-users'
+#        description: 'Notify admin(s) about backend users which are not loggedin for x days.'
+#        schedulable: true
 
-  JosefGlatz\Bureaucratic\Commands\BackendUsers\NotifyCustomerAboutUsersNotLoggedInSinceCommand:
-    tags:
-      - name: 'console.command'
-        command: 'bureaucratic:backend:notify-customer-about-not-loggedin-users'
-        description: 'Notify customer contact(s) about backend users which are not loggedin for x days.'
-        schedulable: true
+#  JosefGlatz\Bureaucratic\Commands\BackendUsers\NotifyCustomerAboutUsersNotLoggedInSinceCommand:
+#    tags:
+#      - name: 'console.command'
+#        command: 'bureaucratic:backend:notify-customer-about-not-loggedin-users'
+#        description: 'Notify customer contact(s) about backend users which are not loggedin for x days.'
+#        schedulable: true
 
-  JosefGlatz\Bureaucratic\Commands\BackendUsers\NotifyCustomerAboutDisabledUsersCommand:
-    tags:
-      - name: 'console.command'
-        command: 'bureaucratic:backend:notify-customer-about-disabled-users'
-        description: 'Notify customer contact(s) about backend users which are disabled.'
-        schedulable: true
+#  JosefGlatz\Bureaucratic\Commands\BackendUsers\NotifyCustomerAboutDisabledUsersCommand:
+#    tags:
+#      - name: 'console.command'
+#        command: 'bureaucratic:backend:notify-customer-about-disabled-users'
+#        description: 'Notify customer contact(s) about backend users which are disabled.'
+#        schedulable: true
 
-  JosefGlatz\Bureaucratic\Commands\BackendUsers\NotifyUsersWithoutMfaCommand:
-    tags:
-      - name: 'console.command'
-        command: 'bureaucratic:backend:notify-users-without-mfa'
-        description: 'Notify backend users which have no active MFA setup.'
-        schedulable: true
+#  JosefGlatz\Bureaucratic\Commands\BackendUsers\NotifyUsersWithoutMfaCommand:
+#    tags:
+#      - name: 'console.command'
+#        command: 'bureaucratic:backend:notify-users-without-mfa'
+#        description: 'Notify backend users which have no active MFA setup.'
+#        schedulable: true
 
-  JosefGlatz\Bureaucratic\Commands\BackendUsers\DisableUsersWithoutMfaCommand:
-    tags:
-      - name: 'console.command'
-        command: 'bureaucratic:backend:disable-users-without-activated-mfa'
-        description: 'Disables backend users which have no active MFA setup until now.'
-        schedulable: true
+#  JosefGlatz\Bureaucratic\Commands\BackendUsers\DisableUsersWithoutMfaCommand:
+#    tags:
+#      - name: 'console.command'
+#        command: 'bureaucratic:backend:disable-users-without-activated-mfa'
+#        description: 'Disables backend users which have no active MFA setup until now.'
+#        schedulable: true
 
-  JosefGlatz\Bureaucratic\Commands\BackendUsers\ValidateEmailAdressCommand:
-    tags:
-      - name: 'console.command'
-        command: 'bureaucratic:backend:validate-users-email-address'
-        description: 'Validates the email addresses of backend user records.'
-        schedulable: false
+#  JosefGlatz\Bureaucratic\Commands\BackendUsers\ValidateEmailAdressCommand:
+#    tags:
+#      - name: 'console.command'
+#        command: 'bureaucratic:backend:validate-users-email-address'
+#        description: 'Validates the email addresses of backend user records.'
+#        schedulable: false
